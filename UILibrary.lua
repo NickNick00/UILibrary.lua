@@ -58,7 +58,8 @@ function UILibrary.new()
 	minimizeButton.LayoutOrder = 2; minimizeButton.Size = UDim2.new(0, 20, 0, 20); minimizeButton.BackgroundTransparency = 1; minimizeButton.Font = Enum.Font.SourceSansBold; minimizeButton.Text = "—"; minimizeButton.TextColor3 = Color3.fromRGB(150, 150, 150); minimizeButton.TextSize = 18
 
 	local closeButton = Instance.new("TextButton", controls)
-	closeButton.LayoutOrder = 1; closeButton.Size = UDim2.new(0, 20, 0, 20); closeButton.BackgroundTransparency = 1; closeButton.Font = Enum.Font.SourceSansBold; closeButton.Text = "X"; closeButton.TextColor3 = Color3.fromRGB(150, 150, 150); closeButton.TextSize = 18
+	closeButton.LayoutOrder = 1; closeButton.Size = UDim2.new(0, 20, 0, 20); closeButton.BackgroundTransparency = 1; closeButton.Font = Enum.Font.SourceSansBold; closeButton.Text = "X"; closeButton.TextColor3 = Color3.fromRGB(150, 150, 150); closeButton.TextSize = 16
+	Instance.new("UICorner", closeButton).CornerRadius = UDim.new(1,0) -- Certifica que o canto está arredondado para 'X'
 
 	local tabsContainer = Instance.new("Frame", mainFrame)
 	tabsContainer.Name = "TabsContainer"; tabsContainer.Size = UDim2.new(1, 0, 0, 40); tabsContainer.Position = UDim2.new(0, 0, 0, 35); tabsContainer.BackgroundTransparency = 1
